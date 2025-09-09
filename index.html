@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Practice Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
+    <!-- A little bit about me-->
     <h1>Mukashev Sultanbek Argynovich</h1>
     <h2>Web technologies frontend</h2>
-    <p>Just a chill guy</p>
+    <p>Just a chill guy. Todays mood 😎😖😤</p>
 
     <hr>
 
+    <h4>Things that I like</h3>
     <ol>
         <li>Gaming</li>
         <li>Programming</li>
@@ -20,18 +23,64 @@
 
     <hr>
 
+    <h4>My favorite web-sites</h4>
     <ul>
         <li><a href="https://www.youtube.com/">You Tube</a></li>
         <li><a href="https://store.steampowered.com/?l=russian">Steam</a></li>
         <li><a href="https://www.w3schools.com/">W3Schools</a></li>
     </ul>
 
+    <!-- Picture of Steve from Minecraft lol-->
     <hr>
 
     <img src="https://upload.wikimedia.org/wikipedia/ru/e/e7/Steve_%28Minecraft%29.png" alt="I am Steve">
     
     <br>
     
-    <button>Press Me!</button>
+    <button>Press To Mine!</button>
+
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Day</th>
+            <th>Time</th>
+        </tr>
+
+
+        <tr>
+            <td>Frontend</td>
+            <td>Monday</td>
+            <td>12:00 - 12:50</td>
+        </tr>
+
+        <tr>
+            <td>DAA</td>
+            <td>Tuesday</td>
+            <td>13:00 - 13:50</td>
+        </tr>
+        
+
+        <tr>
+            <td>OS</td>
+            <td>Wednesday</td>
+            <td>16:00 - 16:50</td>
+        </tr>
+
+    </table>
+    
+    <form>
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <input type="color" id="favcolor" name="favcolor" value="#914fe8">
+        <label for="favcolor">Choose favorite color</label><br>
+
+        <input type="submit" id="log_button" value="Submit">
+    </form>
+
 </body>
 </html>
