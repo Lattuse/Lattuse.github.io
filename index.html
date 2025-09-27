@@ -1,101 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Practice Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header id="top-banner">
-        <h1 class="main-title">Mukashev Sultanbek Argynovich</h1>
-        <h2 class="subtitle">Web Technologies Frontend</h2>
-        <h3 class="tagline">Just a chill guy 😎</h3>
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#hobbies">Hobbies</a></li>
-                <li class="nav-item"><a href="#sites">Websites</a></li>
-                <li class="nav-item"><a href="#schedule">Schedule</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">🔥Bonfire LTD</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#sites">Websites</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <main id="content-wrapper">
-        <section id="about" class="layout-section">
-            <p class="paragraph-text">Just a 2-year student from AITU. Today’s mood 😖😤</p>
-        </section>
+    <div class="grid-layout">
+      <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#sites">Websites</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </aside>
 
-        <section id="hobbies" class="layout-section">
-            <h4 class="section-heading">Things that I like</h4>
-            <ol class="content-box">
-                <li>Gaming</li>
-                <li>Programming</li>
-                <li>Cooking</li>
-            </ol>
-        </section>
+      <main class="main-content">
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            My name is Mukashev Sultanbek. This is my practice page using pure
+            HTML and CSS.
+          </p>
 
-        <section id="sites" class="layout-section">
-            <h4 class="section-heading">My favorite websites</h4>
-            <ul class="content-box">
-                <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-                <li><a href="https://store.steampowered.com/?l=russian" target="_blank">Steam</a></li>
-                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-            </ul>
-        </section>
+          <div>
+            <img src="images/Tarkov sq.jpg" alt="Tarkov girl pfp" />
 
-        <section class="layout-section">
-            <img src="https://upload.wikimedia.org/wikipedia/ru/e/e7/Steve_%28Minecraft%29.png" alt="Steve from Minecraft" id="main-image">
-            <br>
-            <button class="btn-hover-effect">Press To Mine!</button>
-        </section>
-
-        <section id="schedule" class="layout-section">
-            <h4 class="section-heading">My Schedule</h4>
-            <table class="content-box">
-                <tr>
-                    <th>Subject</th>
-                    <th>Day</th>
-                    <th>Time</th>
-                </tr>
-                <tr>
-                    <td>Frontend</td>
-                    <td>Monday</td>
-                    <td>12:00 - 12:50</td>
-                </tr>
-                <tr>
-                    <td>DAA</td>
-                    <td>Tuesday</td>
-                    <td>13:00 - 13:50</td>
-                </tr>
-                <tr>
-                    <td>OS</td>
-                    <td>Wednesday</td>
-                    <td>16:00 - 16:50</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="contact" class="layout-section">
-            <h4 class="section-heading">Contact Me</h4>
-            <form id="user-form">
-                <label for="fname">Name:</label><br>
-                <input type="text" id="fname" name="fname" class="form-input"><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" class="form-input"><br>
-
-                <label for="favcolor">Choose favorite color:</label>
-                <input type="color" id="favcolor" name="favcolor" value="#914fe8" class="form-input"><br>
-
-                <input type="submit" value="Submit" class="submit-btn">
+            <form action="https://www.twitch.tv/lattuse">
+              <button type="submit" class="mine-btn">
+                Subscribe to my Twitch!
+              </button>
             </form>
+          </div>
         </section>
-    </main>
 
-    <footer id="footer-container">
-        <p class="paragraph-text">© 2025 Sultanbek Mukashev, Bonfire LTD</p>
-    </footer>
-</body>
+        <section id="hobbies">
+          <h2>My Hobbies</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="images/vegeta-fireball.gif" alt="Hobby 1" />
+              <h3>Gaming</h3>
+              <p>
+                I enjoy playing video games like Minecraft, especially with my
+                friends. Survivals, maps, and bedwars of course.
+              </p>
+            </div>
+            <div class="card">
+              <img src="images/anime.jpg" alt="Hobby 2" />
+              <h3>Programming</h3>
+              <p>
+                I love to create projects and work on them, especially if I can
+                share my work with others
+              </p>
+            </div>
+            <div class="card">
+              <img src="images/Tarkov sq.jpg" alt="Hobby 3" />
+              <h3>Any military stuff</h3>
+              <p>
+                Bingo, bango, bongo, bish, bash, bosh! Airsoft, military games,
+                shooters, war films - everything!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="sites">
+          <h2>Favorite Websites</h2>
+          <ul>
+            <li><a href="https://store.steampowered.com">Steam</a></li>
+            <li><a href="https://www.youtube.com">YouTube</a></li>
+            <li><a href="https://github.com">GitHub</a></li>
+          </ul>
+        </section>
+
+        <section id="schedule">
+          <h2>My Weekly Schedule</h2>
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>Activity</th>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>Study HTML & CSS</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Practice Java</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Gaming</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Read books</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Project Work</td>
+            </tr>
+          </table>
+        </section>
+
+        <section id="gallery">
+          <h2>Image Gallery</h2>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="images/gallery_1.jpg" alt="Image 1" />
+              <div class="caption">Jotaro Minecraft</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_2.jpg" alt="Image 2" />
+              <div class="caption">Aizen MVD</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_3.jpg" alt="Image 3" />
+              <div class="caption">Frieren, Berserk fan</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_4.jpg" alt="Image 4" />
+              <div class="caption">My beloved UPPG/White Lotus</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_5.jpg" alt="Image 5" />
+              <div class="caption">Literally me fr</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_6.jpg" alt="Image 6" />
+              <div class="caption">Anton and Danila</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_7.jpg" alt="Image 7" />
+              <div class="caption">Me and the boys</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_8.jpg" alt="Image 8" />
+              <div class="caption">Berserk</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_9.jpg" alt="Image 9" />
+              <div class="caption">Sasha Simple</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message"></textarea><br />
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© 2025 Mukashev Sultanbek, BonfireLTD. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>
