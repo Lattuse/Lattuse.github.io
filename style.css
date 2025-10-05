@@ -18,10 +18,12 @@ body {
   text-decoration: underline;
 }
 
+#lol{
+  padding-left: 3rem;
+}
 
 #about img {
-  width: 20%; 
-  max-width: 180px; 
+  width: 180px; 
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -45,6 +47,7 @@ button:hover, .btn-warning:hover {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  height: 100%;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -170,11 +173,12 @@ footer {
 
 @media (max-width: 576px) {
   h2 { font-size: 1.3rem; }
-  p, li, td { font-size: 0.9rem; }
+  p, li, td { font-size: 1.1rem; }
+  #lol {padding-right: calc(var(--bs-gutter-x) * .5); padding-left: calc(var(--bs-gutter-x) * .5);}
 }
 @media (min-width: 577px) and (max-width: 768px) {
   h2 { font-size: 1.5rem; }
-  p, li, td { font-size: 1rem; }
+  p, li, td { font-size: 1.1rem; }
 }
 @media (min-width: 769px) {
   h2 { font-size: 1.8rem; }
