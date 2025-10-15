@@ -42,7 +42,7 @@ button:hover, .btn-warning:hover {
 }
 
 /* Hobbies Cards */
-.card {
+.hobby-card {
   background: #2b3a4d; 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -51,22 +51,22 @@ button:hover, .btn-warning:hover {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
+.hobby-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-.card-title {
+.hobby-card-title {
   margin: 0.5em 0;
   font-size: 1.2em;
   color: #fff;
 }
-.card-text {
+.hobby-card-text {
   padding: 0 1em 1em;
   color: #f0f0f0;
 }
 
-.card img {
+.hobby-card img {
   width: 100%;
   height: 440px;
   object-fit: cover;
@@ -160,15 +160,41 @@ form textarea {
   right: 10px;
   padding: 15px;
   border-radius: 12px;
-  max-height: 90vh; 
+  max-height: 160vh; 
   overflow-y: auto; 
 }
-
 
 
 footer {
   background: #1e2a38;
 }
+
+
+
+.registration-card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 0.75rem;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+.registration-card .card-header {
+  background-color: #ff9800;
+  color: #fff;
+  font-size: large;
+  
+  border-bottom: none;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.registration-card .form-control:focus,
+.registration-card .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25); /* полупрозрачный primary */
+  border-color: #0d6efd;
+}
+
+
 
 
 @media (max-width: 576px) {

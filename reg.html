@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <a class="navbar-brand fw-bold" href="#">🔥Bonfire LTD</a>
+      
+      <div class="navbar" id="navbarNav">
+        Registration Page
+      </div>
+    </nav>
+
+    <main class="flex-grow-1 d-flex align-items-center">
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+          <div class="card registration-card bg-dark">
+            <div class="card-header text-center fw-semibold">
+              Create Account
+            </div>
+            <div class="card-body">
+              <form id="registrationForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required maxlength="30" placeholder="First Name" />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your first name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required maxlength="30" placeholder="Last Name" />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your last name.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="regEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="regEmail" name="email" required maxlength="50" placeholder="name@example.com" />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required minlength="8" placeholder="At least 8 characters" />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Password must be at least 8 characters.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required minlength="8" placeholder="Repeat password" />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Passwords must match.</div>
+                  </div>
+                  <div class="col-12">
+                    <span class="form-label d-block mb-1">Gender</span>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required />
+                      <label class="form-check-label" for="genderMale">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required />
+                      <label class="form-check-label" for="genderFemale">Female</label>
+                    </div>
+                    <div class="invalid-feedback d-block">Please choose your gender.</div>
+                  </div>
+                  <div class="col-12">
+                    <span class="form-label d-block mb-1">Hobbies</span>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="hobbyReading" name="hobbies" value="reading" />
+                      <label class="form-check-label" for="hobbyReading">Reading</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="hobbyMusic" name="hobbies" value="music" />
+                      <label class="form-check-label" for="hobbyMusic">Music</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="hobbyTravel" name="hobbies" value="travel" />
+                      <label class="form-check-label" for="hobbyTravel">Travel</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" class="form-select" name="country" required>
+                      <option value="" selected disabled>Select your country</option>
+                      <option value="usa">United States</option>
+                      <option value="uk">United Kingdom</option>
+                      <option value="kz">Kazakhstan</option>
+                      <option value="ru">Russian Federation</option>
+                      <option value="canada">Canada</option>
+                      <option value="australia">Australia</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please select your country.</div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-2 mt-4">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                  <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                </div>
+              </form>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <footer class="bg-dark text-center text-white py-3 mt-4">
+      © 2025 Mukashev Sultanbek, BonfireLTD. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
